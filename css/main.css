@@ -25,3 +25,7 @@ body {
 .nabby-flexitem {
   max-width: 200px;
 }
+
+.nabby-code {
+  font-family: "Courier New", Courier, monospace;
+}
