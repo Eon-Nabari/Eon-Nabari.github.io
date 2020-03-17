@@ -17,6 +17,10 @@
   }
 }
 
+.flaticon-plant {
+  font-family: "Plant";
+}
+
 .flaticon-001-botanic:before {
   content: "\f100";
 }
