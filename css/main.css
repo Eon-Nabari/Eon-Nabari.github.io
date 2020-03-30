@@ -1,12 +1,13 @@
 body {
   background: rgb(162, 202, 171);
-  background: linear-gradient(90deg, rgba(162, 202, 171, 1) 1%, rgba(32, 143, 155, 1) 52%);
+  background: linear-gradient(180deg, rgba(162, 202, 171, 1) 1%, rgba(32, 143, 155, 1) 52%);
   color: #333333;
   font-family: arial;
   font-size: 12px;
 }
 
 .nabby-flexcontainer {
+  background: #F0F0F0;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
