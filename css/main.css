@@ -29,6 +29,7 @@ body {
 .nabby-flexitem {
   max-width: 200px;
   text-align: center;
+  margin-bottom: 7px;
 }
 
 .nabby-code {
