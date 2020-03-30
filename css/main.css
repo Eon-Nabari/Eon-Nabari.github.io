@@ -30,11 +30,13 @@ body {
 
 .nabby-code {
   font-family: "Courier New", Courier, monospace;
-  display: inline-block;
+  display: block;
   background: #333333;
   color: #F0F0F0;
   padding: 2px;
   margin-top: 8px;
   border-radius: 2px;
   font-size: 11px;
+  min-width: 0px;
+  max-width: 200px;
 }
