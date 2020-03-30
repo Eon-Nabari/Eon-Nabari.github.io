@@ -24,11 +24,6 @@
   text-align: center;
 }
 
-span:before {
-  width: 60px;
-  text-align: center;
-}
-
 .flaticon-001-botanic:before {
   content: "\f100";
 }

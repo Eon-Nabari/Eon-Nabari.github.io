@@ -35,6 +35,10 @@ body {
   margin-bottom: 7px;
 }
 
+span {
+  display: inline;
+}
+
 .nabby-code {
   font-family: "Courier New", Courier, monospace;
   display: block;
