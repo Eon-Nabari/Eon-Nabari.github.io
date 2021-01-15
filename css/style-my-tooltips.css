@@ -1,0 +1,17 @@
+/* style-my-tootltips plugin, tooltip styling */
+#s-m-t-tooltip{
+	/* basic */
+	max-width:300px;
+	z-index:10;
+	margin:24px 14px 7px 12px;
+	/* style and design */
+	padding:8px;
+	background: white;
+	border-radius:3px;
+	border: 3px solid var(--orange);
+	box-shadow:2px 2px 0 rgba(0,0,0,0.15),-1px -1px 0 rgba(255,255,255,0.3);
+	/* font */
+	font-family:Verdana,Geneva,sans-serif;
+	font-size:11px;
+	line-height:16px;
+}
