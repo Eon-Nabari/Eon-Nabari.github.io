@@ -1,7 +1,9 @@
 :root {
-  --backGroundOne: #d1cdb7;
-  --backGroundTwo: #dcd8c0;
-  --mainText: #454138;
+  --backGroundOne: #CDC8B0;
+  --backGroundTwo: #DAD4BB;
+  --backGroundThree: #B4AF9A;
+  --backGroundFour: #686458;
+  --mainText: #4E4B42;
   --shadowText: #bab5a1;
 }
 
@@ -41,6 +43,35 @@ h1 {
   text-shadow: 0.3rem 0.3rem 0 var(--shadowText);
 }
 
+nav {
+  width: 100vw;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  min-width: 120px;
+  list-style-type: none;
+  margin: 0 14px;
+  font-size: 20px;
+  background-color: var(--backGroundThree);
+  color: var(--mainText);
+  padding: 2px 7px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
 .yorha-menu-square {
   width: 16px;
   height: 16px;
@@ -48,32 +79,80 @@ h1 {
   float: left;
   margin-left: 1px;
   margin-right: 7px;
-  margin-top: 6px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  transition: all 1s ease;
 }
 
-nav {
-  width: 100vw;
-  text-transform: uppercase;
+nav li:hover .yorha-menu-square {
+  background-color: var(--backGroundThree);
 }
 
-nav ul {
-  display: flex;
+nav li > a {
+  position: relative;
+  z-index: 1;
+  transition: all 1s ease;
 }
 
-nav li {
-  min-width: 120px;
-  list-style-type: none;
-  margin: 0 2vw;
-  font-size: 20px;
-  background-color: var(--shadowText);
-  padding: 2px 7px;
-  transition: 0.3s;
-  opacity: 0.5;
+nav li:hover a {
+  color: var(--backGroundThree);
 }
 
-nav li:hover {
-  background-color: var(--mainText);
-  opacity: 1;
+nav li::before {
+  content: "";
+  width: 120px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0px 7px;
+  top: 2px;
+  left: -134px;
+  transition: all 1s ease;
+  box-shadow: 0px -6px 0px 0px var(--mainText);
+  border-top: 2px solid var(--backGroundThree);
+}
+
+nav li:hover::before {
+  left: 0px;
+}
+
+nav li::after {
+  content: "";
+  width: 120px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0px 7px;
+  top: 6px;
+  left: -134px;
+  transition: all 1s ease;
+  box-shadow: 0px 6px 0px 0px var(--mainText);
+  border-bottom: 2px solid var(--backGroundThree);
+}
+
+nav li:hover::after {
+  left: 0px;
+}
+
+.yorha-sides {
+  min-width: 0px;
+  background-color: transparent;
+  border-right: 4px solid var(--backGroundThree);
+  cursor: default;
+}
+
+.yorha-sides::before {
+  content: "";
+  padding: 2px;
+  position: relative;
+  top: 0;
+  left: 3px;
+  border-left: 25px solid var(--backGroundThree);
+}
+
+.yorha-sides:hover {
+  background-color: transparent;
 }
 
 nav a {
@@ -81,15 +160,9 @@ nav a {
   color: var(--mainText);
 }
 
-#yorha-darkening {
-  width: 100%;
-  height: 100%;
+.yorha-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  background: radial-gradient(circle, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.8));
-  background-size: 100% 300%;
-  background-position: 0% 50%;
+  top: 40px;
 }
 
 #yorha-grid {
