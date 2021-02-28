@@ -11,6 +11,7 @@ body {
   letter-spacing: 0.03rem;
   font-weight: lighter;
   color: var(--mainText);
+  max-height: 100vh;
 }
 
 #yorha-darkening {
