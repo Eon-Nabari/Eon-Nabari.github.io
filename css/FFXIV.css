@@ -288,13 +288,13 @@ nav a {
   text-transform: uppercase;
 }
 
-.yorha-select li > a {
+.yorha-select li > span {
   position: relative;
   z-index: 1;
   transition: all 0.3s ease;
 }
 
-.yorha-select li:hover a {
+.yorha-select li:hover span {
   color: var(--backGroundThree);
 }
 
