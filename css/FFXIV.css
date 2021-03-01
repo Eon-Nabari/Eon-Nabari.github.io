@@ -79,11 +79,11 @@ nav li {
   background-color: var(--backGroundThree);
   color: var(--mainText);
   padding: 2px 7px;
-  transition: 0.3s;
+  transition: 0.2s;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 .yorha-menu-square {
@@ -96,7 +96,7 @@ nav li {
   margin-top: 5px;
   position: relative;
   z-index: 1;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 
@@ -107,16 +107,39 @@ nav li:hover .yorha-menu-square {
 nav li > a {
   position: relative;
   z-index: 1;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 
 nav li:hover a {
   color: var(--backGroundThree);
 }
 
+nav li:first-child {
+  overflow: hidden;
+}
+
 nav li:first-child:before {
+  content: "";
+  width: 0;
+  height: 0;
+  overflow: hidden;
   background: transparent;
-  box-shadow: 0px -6px 0px 0px transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
+  border: 0 solid transparent;
+}
+
+nav li:hover:first-child::before {
+  left: 3px;
+}
+
+nav li:first-child:after {
+  content: "";
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background: transparent;
+  box-shadow: 0px 0px 0px 0px transparent;
+  border: 0 solid transparent;
 }
 
 nav li::before {
@@ -128,7 +151,7 @@ nav li::before {
   padding: 0px 7px;
   top: 2px;
   left: -134px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   box-shadow: 0px -6px 0px 0px var(--mainText);
   border-top: 2px solid var(--backGroundThree);
 }
@@ -146,7 +169,7 @@ nav li::after {
   padding: 0px 7px;
   top: 6px;
   left: -134px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   box-shadow: 0px 6px 0px 0px var(--mainText);
   border-bottom: 2px solid var(--backGroundThree);
 }
@@ -168,11 +191,7 @@ nav li:hover::after {
   position: relative;
   top: 0;
   left: 3px;
-  border-left: 25px solid var(--backGroundThree);
-}
-
-.yorha-sides:hover {
-  background-color: transparent;
+  border-left: 25px solid var(--backGroundThree) !important;
 }
 
 nav a {
@@ -182,7 +201,101 @@ nav a {
 
 .yorha-content {
   position: absolute;
-  top: 70px;
+  top: 80px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 25px;
+}
+
+.yorha-subh1 {
+  text-transform: none;
+  font-size: 20px;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+  text-shadow: 0 0 0 transparent;
+}
+
+.yorha-select {
+  border-left: 25px solid var(--backGroundThree);
+}
+
+.yorha-select ul {
+  border-left: 4px solid var(--backGroundThree);
+  margin-left: 10px;
+}
+
+.yorha-select li {
+    min-width: 120px;
+    max-width: 250px;
+    list-style-type: none;
+    margin-left: -15px;
+    margin-bottom: 18px;
+    font-size: 20px;
+    background-color: var(--backGroundThree);
+    color: var(--mainText);
+    padding: 2px 7px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.yorha-select li::before {
+  content: "";
+  width: 250px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0px 7px;
+  top: 2px;
+  left: -264px;
+  transition: all 0.3s ease;
+  box-shadow: 0px -6px 0px 0px var(--mainText);
+  border-top: 2px solid var(--backGroundThree);
+}
+
+.yorha-select li:hover::before {
+  left: 0px;
+}
+
+.yorha-select li::after {
+  content: "";
+  width: 250px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0px 7px;
+  top: 6px;
+  left: -264px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 6px 0px 0px var(--mainText);
+  border-bottom: 2px solid var(--backGroundThree);
+}
+
+.yorha-select li:hover::after {
+  left: 0px;
+}
+
+.yorha-select li:hover .yorha-menu-square {
+  background-color: var(--backGroundThree);
+}
+
+.yorha-select a {
+  text-decoration: none;
+  color: var(--mainText);
+  text-transform: uppercase;
+}
+
+.yorha-select li > a {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.yorha-select li:hover a {
+  color: var(--backGroundThree);
 }
 
 #yorha-grid {
