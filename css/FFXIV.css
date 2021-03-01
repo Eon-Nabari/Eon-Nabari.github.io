@@ -43,7 +43,7 @@ h1 {
   text-shadow: 0.3rem 0.3rem 0 var(--shadowText);
 }
 
-nav {
+.yorha-menu {
   width: 100vw;
   text-transform: uppercase;
   position: absolute;
@@ -53,7 +53,17 @@ nav {
   border-bottom: 3px solid var(--mainText);
 }
 
-.nav-border {
+.yorha-sides {
+  width: 160px;
+  height: 31px;
+  float: left;
+  background: red;
+  position: absolute;
+  top: 20px;
+  left: 14px;
+}
+
+.yorha-menu-border {
   width: 100vw;
   height: 76px;
   position: absolute;
@@ -65,13 +75,13 @@ nav {
   background-repeat: repeat-x;
 }
 
-nav ul {
+.yorha-menu ul {
   margin-top: 20px;
   padding: 0;
   display: flex;
 }
 
-nav li {
+.yorha-menu li {
   min-width: 120px;
   list-style-type: none;
   margin: 0 14px;
@@ -99,50 +109,26 @@ nav li {
   transition: all 0.3s ease;
 }
 
-
-nav li:hover .yorha-menu-square {
+.yorha-menu li:hover .yorha-menu-square {
   background-color: var(--backGroundThree);
 }
 
-nav li > a {
+.yorha-menu li > span {
   position: relative;
   z-index: 1;
   transition: all 0.3s ease;
 }
 
-nav li:hover a {
+.yorha-menu li:hover span {
   color: var(--backGroundThree);
 }
 
-nav li:first-child {
-  overflow: hidden;
+.yorha-menu a {
+  text-decoration: none;
+  color: var(--mainText);
 }
 
-nav li:first-child:before {
-  content: "";
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  background: transparent;
-  box-shadow: 0px 0px 0px 0px transparent;
-  border: 0 solid transparent;
-}
-
-nav li:hover:first-child::before {
-  left: 3px;
-}
-
-nav li:first-child:after {
-  content: "";
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  background: transparent;
-  box-shadow: 0px 0px 0px 0px transparent;
-  border: 0 solid transparent;
-}
-
-nav li::before {
+.yorha-menu li::before {
   content: "";
   width: 120px;
   height: calc(100% - 10px);
@@ -156,11 +142,11 @@ nav li::before {
   border-top: 2px solid var(--backGroundThree);
 }
 
-nav li:hover::before {
+.yorha-menu li:hover::before {
   left: 0px;
 }
 
-nav li::after {
+.yorha-menu li::after {
   content: "";
   width: 120px;
   height: calc(100% - 10px);
@@ -174,29 +160,8 @@ nav li::after {
   border-bottom: 2px solid var(--backGroundThree);
 }
 
-nav li:hover::after {
+.yorha-menu li:hover::after {
   left: 0px;
-}
-
-.yorha-sides {
-  min-width: 0px;
-  background-color: transparent;
-  border-right: 4px solid var(--backGroundThree);
-  cursor: default;
-}
-
-.yorha-sides::before {
-  content: "";
-  padding: 2px;
-  position: relative;
-  top: 0;
-  left: 3px;
-  border-left: 25px solid var(--backGroundThree) !important;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--mainText);
 }
 
 .yorha-content {
