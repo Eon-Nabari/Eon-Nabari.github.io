@@ -50,52 +50,141 @@
   <div class="yorha-content">
     <h1>job</h1>
 
-    <h2>Black Mage</h2>
+    <h2>Black Mage - wip</h2>
 
     <div class="yorha-textbox">
       <div class="yorha-textborder">
         <div class="yorha-dotone"></div>
         <div class="yorha-dottwo"></div>
         <div class="yorha-textscroll">
+          <h3>Important</h3>
+          <p><b>Umbral Ice:</b> Umbral Ice is a buff that significantly increases MP regeneration while lowering the damage and MP cost of Fire spells. At 3 stacks, the cast time of Fire spells is also halved.</p>
+          <p><b>Astral Fire:</b> Astral Fire is a buff that increases the damage and MP cost of Fire spells, while lowering the damage and MP cost of Ice spells. At 3 stacks, the cast time of Ice spells is also halved. Natural MP regeneration is
+            halted during Astral Fire. <span style="color: blue;">Lucid Dreaming</span> does not work. <span style="color: blue;">Manafont</span> and ethers work</p>
           <h3>Job Actions</h3>
           <table>
             <tr>
-            <td class="yorha-tableheader">Action</td>
-            <td class="yorha-tableheader">Aquired</td>
-            <td class="yorha-tableheader">Type</td>
-            <td class="yorha-tableheader">Cast</td>
-            <td class="yorha-tableheader">Recast</td>
-            <td class="yorha-tableheader" style="min-width: 70px;">MP Cost</td>
-            <td class="yorha-tableheader">Range<br />Radius</td>
-            <td class="yorha-tableheader" width="50%">Effect</td>
-          </tr>
+              <td class="yorha-tableheader">Action</td>
+              <td class="yorha-tableheader">Aquired</td>
+              <td class="yorha-tableheader">Type</td>
+              <td class="yorha-tableheader">Cast</td>
+              <td class="yorha-tableheader">Recast</td>
+              <td class="yorha-tableheader" style="min-width: 70px;">MP Cost</td>
+              <td class="yorha-tableheader">Range<br />Radius</td>
+              <td class="yorha-tableheader" width="50%">Effect</td>
+            </tr>
             <tr>
-              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" title="Blizzard" /></td>
-              <td>Lv: 1</td>
+              <td style="padding-top: 25px;"><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" title="Blizzard" /></td>
+              <td style="padding-top: 25px;">Lv: 1</td>
+              <td style="padding-top: 25px;">Spell</td>
+              <td style="padding-top: 25px;">2.5s</td>
+              <td style="padding-top: 25px;">2.5s</td>
+              <td style="padding-top: 25px;">400 MP</td>
+              <td style="padding-top: 25px;">↔ 25y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 0y</td>
+              <td style="padding-top: 25px;">
+                Deals ice damage with a potency of 180.<br />
+                <b>Additional Effect:</b> Grants <i>Umbral Ice</i> or removes <i>Astral Fire</i> for 15s.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" title="Fire" /></td>
+              <td>Lv: 2</td>
               <td>Spell</td>
               <td>2.5s</td>
               <td>2.5s</td>
-              <td>400 MP</td>
+              <td>800 MP</td>
               <td>↔ 25y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 0y</td>
               <td>
-                Deals ice damage with a potency of 180.<br />
+                Deals fire damage with a potency of 180.<br />
+                <b>Additional Effect:</b> Grants <i>Astral Fire</i> or removes <i>Umbral Ice</i> for 15s.<br />
+                <b>Additional Effect:</b> 40% chance next <u>Fire III</u> will cost no MP and have no cast time for 18s.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/transpose.png" title="Transpose" /></td>
+              <td>Lv: 4</td>
+              <td>Ability</td>
+              <td>Instant</td>
+              <td>5s</td>
+              <td>-</td>
+              <td>↔ 0y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 0y</td>
+              <td>
+                Swaps <i>Astral Fire</i> with a single <i>Umbral Ice</i>, or <i>Umbral Ice</i> with a single <i>Astral Fire</i>.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/thunder.png" title="Thunder" /></td>
+              <td>Lv: 6</td>
+              <td>Spell</td>
+              <td>2.5s</td>
+              <td>2.5s</td>
+              <td>200 MP</td>
+              <td>↔ 25y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 0y</td>
+              <td>
+                Deals lightning damage with a potency of 30.<br />
+                <b>Additional Effect:</b> Lightning damage over time with a potency of 40 and duration of 18s.<br />
+                <b>Additional Effect:</b> 10% chance after each tick that the next <u>Thunder</u> spell of any grade will add its full damage over time amount to its initial damage, have no cast time, and cost no MP for 18s.<br />
+                Only one <u>Thunder</u> spell-induced damage over time effect per caster can be inflicted upon a single target.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/sleep.png" title="Sleep" /></td>
+              <td>Lv: 10</td>
+              <td>Spell</td>
+              <td>2.5s</td>
+              <td>2.5s</td>
+              <td>800 MP</td>
+              <td>↔ 30y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 5y</td>
+              <td>
+                Puts target and all nearby enemies to sleep for 30s.<br />
+                Cancels auto-attack upon execution.
+              </td>
+            </tr>
+            <tr>
+              <td><img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard_ii.png" title="Blizzard II" /></td>
+              <td>Lv: 12</td>
+              <td>Spell</td>
+              <td>2s</td>
+              <td>2.5s</td>
+              <td>800 MP</td>
+              <td>↔ 0y<br /><span style="letter-spacing: -0.94em; margin-right: 13px; font-size: 15px;">◖◗</span> 5y</td>
+              <td>
+                Deals ice damage with a potency of 50 to all nearby enemies.<br />
                 <b>Additional Effect:</b> Grants <i>Umbral Ice</i> or removes <i>Astral Fire</i> for 15s.
               </td>
             </tr>
           </table>
           <h3>Lv: 4 Rotation</h3>
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" />
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" />
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" />
-          out of mana
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/transpose.png" />
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" />
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" />
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" />
-          100% mana
-          <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/transpose.png" />
+          <blockquote>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" title="Fire" />
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" title="Fire" />
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/fire.png" title="Fire" />
+            <div class="y1 ra"></div>
+            <div class="yorha-boxtext">
+              out of mana
+            </div>
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/transpose.png" title="Transpose" />
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" title="Blizzard" />
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" title="Blizzard" />
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/blizzard.png" title="Blizzard" />
+            <div class="y1 ra"></div>
+            <div class="yorha-boxtext">
+              100% mana
+            </div>
+            <div class="y1 ra"></div>
+            <img src="../../assets/FFXIV Icons/FFXIVIcons Battle(PvE)/13_BLM/transpose.png" title="Transpose" />
+          </blockquote>
         </div>
       </div>
     </div>
+  </div>
+  <div class="yorha-footer">
+    <div>Icons made by <a href="https://icon54.com/" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   </div>
 </body>

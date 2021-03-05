@@ -22,22 +22,44 @@
   src: url("../assets/Open Sans/OpenSans-Italic.ttf");
   font-style: italic;
 }
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 05/03/2021 21:19
+  */
+@font-face {
+  font-family: "Icons";
+  src: url("../assets/ffxiv fonts/Flaticon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  #s-m-t-tooltip {
-    -webkit-animation: zoom 600ms;
-    max-width: 300px;
-    max-width: 300px;
-    padding: 3px 5px;
-    margin: 20px 0px 0px 20px;
-    background-color: var(--backGroundThree);
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: lowercase;
-    color: var(--mainText);
-    text-transform: uppercase;
-    z-index: 999999999999999999999999999999999999;
-    font-weight: bold;
-  }
+.y1 {
+  font-family: "Icons";
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+
+.ra:before {
+  content: "\f100";
+}
+
+#s-m-t-tooltip {
+  -webkit-animation: zoom 600ms;
+  max-width: 300px;
+  max-width: 300px;
+  padding: 3px 5px;
+  margin: 20px 0 0 20px;
+  background-color: var(--backGroundThree);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  color: var(--mainText);
+  text-transform: uppercase;
+  z-index: 999999999999999999999999999999999999;
+  font-weight: bold;
+}
 
 body {
   background-color: var(--backGroundOne);
@@ -73,7 +95,26 @@ h2 {
 }
 
 h3 {
+  font-size: 20px;
   margin: 0;
+}
+
+blockquote {
+  position: relative;
+  padding: 0.5rem;
+  line-height: 20px;
+}
+
+blockquote:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  bottom: 0;
+  height: 100%;
+  width: 0.3rem;
+  border: solid var(--backGroundThree);
+  border-width: 0 0.2rem 0 0.6rem;
 }
 
 .yorha-menu {
@@ -375,30 +416,86 @@ body > div.yorha-menu-border > div > ul > a:nth-child(1) > li {
 }
 
 .yorha-textscroll > p {
-  margin-top: 0;
+  margin-top: 15px;
   margin-bottom: 0;
 }
 
 .yorha-textscroll > p ~ p {
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .yorha-textscroll table {
   width: 100%;
   border-collapse: collapse;
 }
+
+.yorha-textscroll td {
+  padding-bottom: 25px;
+  min-width: 65px;
+  font-size: 13px;
+  vertical-align: middle;
+  text-align: left;
+}
+
 .yorha-tableheader {
   font-weight: bold;
   border-bottom: 1px solid;
-  padding-bottom: 10px;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
 }
 
-.double {
-  padding: 0;
+table i {
+  font-style: normal;
+  color: red;
 }
 
-.yorha-textscroll td {
-  padding-top: 5px;
-  min-width: 65px;
+table b {
+  color: green;
+}
+
+table u {
+  text-decoration: none;
+  color: blue;
+}
+
+.yorha-boxtext {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  position: relative;
+  top: -10px;
   font-size: 13px;
+  border: 5px solid var(--backGroundTwo);
+  text-align: center;
+  line-height: 14px;
+}
+
+.yorha-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 11px;
+  text-align: center;
+  width: 100vw;
+}
+
+.gcd {
+  box-shadow: 0px 3px 0px 0px green;
+}
+
+.ogcd {
+  box-shadow: 0px 3px 0px 0px blue;
+}
+
+.ogcd-weave {
+  box-shadow: 0px 3px 0px 0px red;
+}
+
+.pre-pull {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
