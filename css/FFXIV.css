@@ -63,6 +63,16 @@
   font-weight: bold;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
   background-color: var(--backGroundOne);
   -webkit-background-size: 0.3rem 0.3rem;
@@ -78,7 +88,6 @@ body {
   font-weight: lighter;
   color: var(--mainText);
   font-size: 16px;
-  overflow-y: hidden;
 }
 
 h1 {
@@ -262,6 +271,140 @@ body > div.yorha-menu-border > div > ul > a:nth-child(1) > li {
   left: 0;
 }
 
+.yorha-fast {
+  width: 100vw;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-bottom: 3px;
+}
+
+.yorha-fast .yorha-sides {
+  width: 25px;
+  height: 31px;
+  float: left;
+  background: var(--backGroundThree);
+  position: absolute;
+  top: 0px;
+  left: 25px;
+}
+
+.yorha-fast .yorha-sidesOne {
+  width: 4px;
+  height: 31px;
+  float: left;
+  background: var(--backGroundThree);
+  position: absolute;
+  top: 0px;
+  left: 60px;
+}
+
+.yorha-fast-border {
+  width: 100vw;
+  height: 76px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, var(--mainText) 30%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 60px 3px;
+  background-repeat: repeat-x;
+}
+
+body > div.yorha-fast-border > div > ul > a:nth-child(1) > li {
+  margin-left: 90px;
+}
+
+.yorha-fast ul {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+}
+
+.yorha-fast li {
+  min-width: 120px;
+  list-style-type: none;
+  margin: 0 14px;
+  font-size: 20px;
+  background-color: var(--backGroundThree);
+  color: var(--mainText);
+  padding: 2px 7px;
+  transition: 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.yorha-fast-square {
+  width: 16px;
+  height: 16px;
+  background-color: var(--mainText);
+  float: left;
+  margin-left: 1px;
+  margin-right: 7px;
+  margin-top: 5px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.yorha-fast li:hover .yorha-fast-square {
+  background-color: var(--backGroundThree);
+}
+
+.yorha-fast li > span {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.yorha-fast li:hover span {
+  color: var(--backGroundThree);
+}
+
+.yorha-fast a {
+  text-decoration: none;
+  color: var(--mainText);
+}
+
+.yorha-fast li::before {
+  content: "";
+  width: 120px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0 7px;
+  top: 2px;
+  left: -134px;
+  transition: all 0.3s ease;
+  box-shadow: 0 -6px 0 0 var(--mainText);
+  border-top: 2px solid var(--backGroundThree);
+}
+
+.yorha-fast li:hover::before {
+  left: 0;
+}
+
+.yorha-fast li::after {
+  content: "";
+  width: 120px;
+  height: calc(100% - 10px);
+  background: var(--mainText);
+  position: absolute;
+  padding: 0 7px;
+  top: 6px;
+  left: -134px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 0 0 var(--mainText);
+  border-bottom: 2px solid var(--backGroundThree);
+}
+
+.yorha-fast li:hover::after {
+  left: 0;
+}
+
 .yorha-content {
   position: absolute;
   top: 80px;
@@ -362,23 +505,10 @@ body > div.yorha-menu-border > div > ul > a:nth-child(1) > li {
 }
 
 .yorha-textbox {
-  margin-top: 40px;
-  width: calc(100vw - 45px);
-  height: 60vh;
-  background: var(--backGroundTwo);
+  width: calc(100vw - 90px);
+  display: block;
   position: relative;
-}
-
-.yorha-textborder {
-  width: calc(100% - 50px);
-  height: calc(100% - 22px);
-  position: absolute;
-  top: 9px;
-  left: 15px;
-  border-top: 2px solid;
-  border-bottom: 2px solid;
-  border-color: var(--shadowText);
-  text-align: justify;
+  margin-bottom: 40px;
 }
 
 .yorha-dotone {
@@ -402,15 +532,15 @@ body > div.yorha-menu-border > div > ul > a:nth-child(1) > li {
 }
 
 .yorha-textscroll {
-  width: calc(100% - 10px);
-  height: calc(100% - 20px);
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: calc(100% - 40px);
+  position: relative;
+  background: var(--backGroundTwo);
+  top: 0px;
+  left: 0px;
   font-size: 14px;
   overflow: auto;
   overflow-x: hidden;
-  padding-right: 20px;
+  padding: 30px;
 }
 
 .yorha-textscroll::-webkit-scrollbar {
@@ -482,12 +612,12 @@ table u {
 
 .yorha-footer {
   position: absolute;
-  bottom: 10px;
   left: 0;
   font-size: 11px;
   text-align: center;
-  width: 100vw;
+  width: 100%;
   z-index: -1;
+  margin-bottom: 10px;
 }
 
 .pre-pull {
