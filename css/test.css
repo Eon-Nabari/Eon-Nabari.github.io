@@ -1,0 +1,84 @@
+@import url(https://files.jcink.net/uploads2/tychai/Fonts/custom_fonts.css);
+
+:root {
+	--offWhite: #f3f3f3;
+	--purpleGrad: #5f2c82;
+	--blueGrad: #49a09d;
+	--mainText: #333;
+
+	--admin: #9862af;
+	--adminLink: #a088aa;
+  
+	--bard: #af6262;
+	--magus: #af629f;
+	--paladin: #6385b2;
+	--ranger: #65b5a5;
+	--rogue: #71b766;
+	--warrior: #bab768;
+	--scribe: #bc9169;
+}
+
+.dp-main-profilescroll {
+    width: 540px;
+    height: 560px;
+    background: #f3f3f3;
+    padding: 15px;
+    color: var(--mainText);
+    font-family: 'Alata', sans-serif;
+    font-size: 12px;
+}
+
+.dp-main-content1 {
+  width: 100%;
+  background: #fefefe;
+  border-radius: 5px;
+  border-bottom: 5px solid white;
+}
+
+.dp-main-contenttitle {
+  width: calc(100% - 30px);
+  height: 100px;
+  padding-right: 30px;
+  line-height: 100px;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+  font-family: "Aqum";
+  font-size: 18px;
+  background: #e1e1e1;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+
+.dp-main-contenttitle u {
+  text-decoration-color: var(--admin);
+}
+
+.dp-main-titleaccent {
+  font-size: 170px !important;
+  float: left;
+  color: var(--admin);
+  opacity: 0.4;
+  transform: rotate(8deg);
+}
+
+.dp-main-content1 table {
+  width: calc(100% - 10px);
+  margin: 5px;
+  border-collapse: collapse;
+  
+}
+
+.dp-main-content1 table tr td {
+  padding: 8px;
+  width: 50%;
+  vertical-align: top;
+}
+
+.dp-main-content1 highlight {
+  background: var(--admin);
+  padding: 2px 6px;
+  color: var(--offWhite);
+  font-family: "Aqum";
+  font-size: 10px;
+  border-radius: 2px;
+}
